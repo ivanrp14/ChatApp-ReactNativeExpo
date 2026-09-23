@@ -1,17 +1,17 @@
 # ChatApp
 
-Aplicación de chat para móvil hecha con **Expo** y **React Native**. Tiene registro, login y una pantalla de conversación.
+A mobile chat app built with **Expo** and **React Native**. It has sign-up, login, and a conversation screen.
 
-## Pantallas
+## Screens
 
-| Archivo | Qué es |
+| File | What it is |
 | --- | --- |
-| `screens/Signup.js` | Alta |
-| `screens/Login.js` | Entrada |
-| `screens/Home.js` | Home, con botón a la conversación |
+| `screens/Signup.js` | Sign-up |
+| `screens/Login.js` | Sign-in |
+| `screens/Home.js` | Home, with a button into the conversation |
 | `screens/Chat.js` | Chat (`react-native-gifted-chat`) |
 
-La navegación es un stack (`@react-navigation/stack`) montado desde `App.js`. Los colores comunes están en `colors.js`. Firebase se inicializa en `config/firebase.js`.
+Navigation is a stack (`@react-navigation/stack`) mounted from `App.js`. Shared colors are in `colors.js`. Firebase is initialized in `config/firebase.js`.
 
 ## Stack
 
@@ -22,14 +22,14 @@ La navegación es un stack (`@react-navigation/stack`) montado desde `App.js`. L
 - AsyncStorage
 - react-native-gifted-chat
 
-## Cómo ejecutarlo
+## How to run
 
 ```bash
 npm install
 npx expo start
 ```
 
-Después, `a` para Android o `i` para iOS (en macOS). También vale:
+Then press `a` for Android or `i` for iOS (on macOS). These also work:
 
 ```bash
 npm run android
@@ -37,4 +37,4 @@ npm run ios
 npm run web
 ```
 
-Hace falta un proyecto de Firebase (Authentication y el servicio de datos que use `config/firebase.js`) y las claves en el entorno que lee `react-native-dotenv`. No subas esas claves al repositorio.
+You need a Firebase project (Authentication and whichever data service `config/firebase.js` uses) and the keys in the environment read by `react-native-dotenv`. Do not commit those keys.
